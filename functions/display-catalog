@@ -1,0 +1,10 @@
+<?php
+require_once './products.php';
+
+function displayCatalog(Catalog $catalog)
+{
+    $productList = $catalog->productList;
+    foreach ($productList as $product) {
+        displayProduct($product);
+    }
+}
